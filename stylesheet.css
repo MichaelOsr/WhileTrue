@@ -3,12 +3,13 @@
 body {
     background-color: #1E1E1E;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 24px 83px;
+    padding: 32px 83px 0 83px;
 }
 
 .navbar{
@@ -25,6 +26,7 @@ header {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
+    margin-right: 90.6px;
 }
 
 .menu ul {
@@ -60,97 +62,11 @@ header {
     padding-left:25px;
 }
 
-/* .menu {
-    float: left;
-} */
-
-/* header h1{
-    position: absolute;
-    width: 201.44px;
-    height: 32px;
-    left: 83px;
-    top: 32px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 32px;
-    identical to box height, or 89%
-    
-    letter-spacing: 0.07em;
-    
-    color: #FFFFFF;
-} */
-
-/* .menu {
-    position: absolute;
-    width: 63.16px;
-    height: 32px;
-    left: 375.04px;
-    top: 32px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    identical to box height, or 178%
-
-    letter-spacing: 0.07em;
-
-    color: #868686;
-} */
-
-/* .menu2 {
-    position: absolute;
-    width: 112.16px;
-    height: 32px;
-    left: 470.2px;
-    top: 32px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    identical to box height, or 178%
-
-    letter-spacing: 0.07em;
-
-    color: #868686;
-} */
-
-/* .menu3 {
+.video {
+    width: 800px;
+    height: 472px;
+    background-color: #0F0F0F;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 8px 100px 8px 18px;
-    gap: 10px;
-
-    position: absolute;
-    width: 374.58px;
-    height: 48px;
-    left: 982.42px;
-    top: 24px;
-
-    background: #374151;
-    border-radius: 37px;
-} */
-
-/* header input{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 100px 8px 18px;
-    gap: 10px;
-
-    position: absolute;
-    width: 374.58px;
-    height: 48px;
-    left: 982.42px;
-    top: 24px;
-
-    background: #374151;
-    border-radius: 37px;
-} */
+    justify-content: center;
+}
