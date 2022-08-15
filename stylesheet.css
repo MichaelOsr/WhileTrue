@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&family=Merriweather&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #1E1E1E;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 83px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.menu ul li a {
+    color: rgba(134, 134, 134, 1);
+    text-decoration: none;
+}
+
+.navbar {
+    float: left;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.searchBox input {
+    background: #374151;
+    border-radius: 37px;
+    width: 374.58px;
+    height: 48px;
+    padding-left:25px;
+}
+
+/* .menu {
+    float: left;
+} */
+
+/* header h1{
+    position: absolute;
+    width: 201.44px;
+    height: 32px;
+    left: 83px;
+    top: 32px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 32px;
+    identical to box height, or 89%
+    
+    letter-spacing: 0.07em;
+    
+    color: #FFFFFF;
+} */
+
+/* .menu {
+    position: absolute;
+    width: 63.16px;
+    height: 32px;
+    left: 375.04px;
+    top: 32px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    identical to box height, or 178%
+
+    letter-spacing: 0.07em;
+
+    color: #868686;
+} */
+
+/* .menu2 {
+    position: absolute;
+    width: 112.16px;
+    height: 32px;
+    left: 470.2px;
+    top: 32px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    identical to box height, or 178%
+
+    letter-spacing: 0.07em;
+
+    color: #868686;
+} */
+
+/* .menu3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 100px 8px 18px;
+    gap: 10px;
+
+    position: absolute;
+    width: 374.58px;
+    height: 48px;
+    left: 982.42px;
+    top: 24px;
+
+    background: #374151;
+    border-radius: 37px;
+} */
+
+/* header input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 100px 8px 18px;
+    gap: 10px;
+
+    position: absolute;
+    width: 374.58px;
+    height: 48px;
+    left: 982.42px;
+    top: 24px;
+
+    background: #374151;
+    border-radius: 37px;
+} */
