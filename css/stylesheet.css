@@ -89,3 +89,19 @@ header {
     fill:#FF0000;
     
 }
+
+.detail-movie{
+    border-bottom: 1px solid white;
+}
+
+
+.container-footer h2{
+    color: white;
+    font-style: normal;
+    font-size: 20px;
+    margin-left:129px;
+}
+
+.container-footer p{
+    margin-left:129px;
+}
