@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&family=Merriweather&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    background-color: #1E1E1E;
+    background-color: #192026;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
@@ -10,6 +10,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 32px 83px 0 83px;
+}
+
+.container {
+    padding: 0 130px;
 }
 
 .navbar{
@@ -42,6 +46,14 @@ header {
     color: rgba(134, 134, 134, 1);
     text-decoration: none;
 }
+.menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+/* .menu ul li .active {
+    color: #fff;
+    text-decoration: none;
+} */
 
 .navbar {
     float: left;
@@ -69,4 +81,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.video:hover .yt{
+    fill:#FF0000;
+    
 }
