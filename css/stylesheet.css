@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&family=Merriweather&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-body {
-    background-color: #192026;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+main{
+
+    width: 600px;
+    border: 2px solid #000;
+    margin: 50px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "header header"
+
+                         "container side"
+
+                          "nav side"
+
+                          "footer footer";
+
+    grid-template-columns: 1fr 1.5fr;
+
+    grid-template-rows: 1fr 1fr 1.3fr;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     padding: 32px 83px 0 83px;
-}
-
-.container {
-    padding: 0 130px;
+    grid-area: header;
 }
 
 .navbar{
     display: flex;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
+    float: left;
 }
 
 .navbar h1 {
@@ -31,6 +40,11 @@ header {
     font-weight: 700;
     font-size: 36px;
     margin-right: 90.6px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
 }
 
 .menu ul {
@@ -46,24 +60,21 @@ header {
     color: rgba(134, 134, 134, 1);
     text-decoration: none;
 }
+
 .menu ul li a:hover {
     color: #fff;
     text-decoration: none;
 }
+
 /* .menu ul li .active {
     color: #fff;
     text-decoration: none;
 } */
 
-.navbar {
-    float: left;
-}
-
 .searchBox {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 
 .searchBox input {
@@ -72,6 +83,29 @@ header {
     width: 374.58px;
     height: 48px;
     padding-left:25px;
+}
+
+/* */
+body {
+    background-color: #192026;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Aside left */
+.container {
+    padding: 0 130px;
+    display: grid;
+    width: 80%;
+    grid-area: side;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 100px;
+    column-gap: 50px;
+    row-gap: 20px; 
+}
+
+.detail-movie{
+    border-bottom: 1px solid white;
 }
 
 .video {
@@ -87,41 +121,83 @@ header {
 
 .video:hover .yt{
     fill:#FF0000;
+}
+
+/* Navbar/Nav */
+nav{
+    padding: 50px;
+    background-color: lightcyan;
+    grid-area: nav;
+
+}
+
+/* Content/Section */
+.side {
+    display: grid;
+    grid-area: side;
+}
+
+.popular-pic{
+    width: 50%;
+    padding:10px;
+}
+.popular-pic img{
+    width:200px;
+    height:200px;;
     
 }
 
-.detail-movie{
-    border-bottom: 1px solid white;
-}
+/* Footer
 
+    Animation Text, */
+
+    .title-word {
+        animation: color-animation 4s linear infinite;
+      }
+      
+      .title-word-1 {
+        --color-1: #f0661c;
+        --color-2: #0f31f7;
+        --color-3: #79e911;
+      }
+      
+      .title-word-2 {
+        --color-1: #f3d009;
+        --color-2: #ACCFCB;
+        --color-3: #fef7ff;
+      }
+
+      .title-word-3 {
+        --color-1: #e96b6b;
+        --color-2: #df4947;
+        --color-3: #ec0808;
+      }
+      
+      @keyframes color-animation {
+        0%    {color: var(--color-1)}
+        32%   {color: var(--color-1)}
+        33%   {color: var(--color-2)}
+        65%   {color: var(--color-2)}
+        66%   {color: var(--color-3)}
+        99%   {color: var(--color-3)}
+        100%  {color: var(--color-1)}
+      }
+
+      .title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 8.5vw;
+        text-transform: uppercase;
+      }
+
+/* Tata letak warna  */
+.container-footer{
+    grid-area: footer;
+}
 
 .container-footer h2{
     color: white;
     font-style: normal;
     font-size: 20px;
     margin-left:129px;
-}
-
-.container-footer p{
-    margin-left:129px;
-    opacity:0.5;
-}
-
-
-
-.side{
-
-  
-    border-bottom: 1px solid white;
-
-}
-.popular-pic{
-    width: 50%;
-    padding:10px;
-}
-.popular-pic img{
-   
-    width:120px;
-    height:120px;;
-    
 }
