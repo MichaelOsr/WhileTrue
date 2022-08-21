@@ -1,32 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&family=Merriweather&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* main{
+@media only screen and (max-width: 1024px) {
+    .container {
+        display: flex!important;
+        flex-direction: column!important;
+    }
 
-    width: 600px;
-    border: 2px solid #000;
-    margin: 50px auto;
-    padding: 5px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-areas: "header header"
+    .video {
+        width: 700px!important;
+    }
 
-                         "container side"
+    .popular-anime {
+        display: grid;
+        grid-template-columns: auto auto auto!important;
+    }
 
-                          "nav side"
-
-                          "footer footer";
-
-    grid-template-columns: 1fr 1.5fr;
-
-    grid-template-rows: 1fr 1fr 1.3fr;
-} */
+  }
 
 /* Header */
 header {
     display: flex;
     justify-content: space-between;
     padding: 32px 83px 0 83px;
-    /* grid-area: header; */
 }
 
 .navbar{
@@ -49,6 +44,7 @@ header {
 
 .menu ul {
     display: flex;
+    align-items: center;
 }
 
 .menu ul li {
@@ -82,7 +78,9 @@ header {
     border-radius: 37px;
     width: 374.58px;
     height: 48px;
-    padding-left:25px;
+    padding-left: 25px;
+    color: white;
+    border-color: black;
 }
 
 /* */
@@ -95,13 +93,11 @@ body {
 /* Aside left */
 .container {
     padding: 0 130px;
-    /* display: grid;
-    width: 80%;
-    grid-area: side;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px 100px;
-    column-gap: 50px;
-    row-gap: 20px;  */
+    display: flex;
+}
+
+.main {
+    margin-right: 2.5rem;
 }
 
 .detail-movie{
@@ -131,17 +127,18 @@ nav{
 
 }
 
-/* Content/Section */
-/* .side {
+.popular-anime {
     display: grid;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-} */
-
+    grid-template-columns: auto auto;
+}
 .popular-pic{
     width: min-content;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .popular-pic img{
     max-width: 200px;
+    border-radius: 10px;
     /* max-height: 370px; */
 }
 
